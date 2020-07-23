@@ -1,0 +1,332 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Scenes/GameOver.tscn" type="PackedScene" id=1]
+[ext_resource path="res://fluidBlue.png" type="Texture" id=2]
+[ext_resource path="res://Montreal-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scenes/Main.gd" type="Script" id=4]
+[ext_resource path="res://fluidGreen.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 3 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 30, 25 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 90
+font_data = ExtResource( 3 )
+
+[node name="Main" type="Node2D"]
+visible = false
+script = ExtResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -235.0
+margin_top = 24.0
+margin_right = 235.0
+margin_bottom = 74.0
+custom_fonts/font = SubResource( 1 )
+text = "Choose odd numbers"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button00" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 236, 91 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button00"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -23.8861
+margin_top = -25.0
+margin_right = 26.1139
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button01" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 369, 91 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button01"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -23.8861
+margin_top = -25.0
+margin_right = 26.1139
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button02" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 501, 91 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button02"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button03" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 634, 91 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button03"]
+anchor_left = 0.477787
+anchor_top = 0.5
+anchor_right = 0.477787
+anchor_bottom = 0.5
+margin_left = -22.4644
+margin_top = -25.0
+margin_right = 27.5356
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button10" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 236, 198 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button10"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button11" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 369, 198 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button11"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button12" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 502, 198 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button12"]
+anchor_left = 0.488878
+anchor_top = 0.488695
+anchor_right = 0.488878
+anchor_bottom = 0.488695
+margin_left = -24.7954
+margin_top = -25.0
+margin_right = 25.2046
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button13" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 635, 199 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button13"]
+anchor_left = 0.5
+anchor_top = 0.488695
+anchor_right = 0.5
+anchor_bottom = 0.488695
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button20" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 236, 306 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button20"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -26.2553
+margin_right = 25.0
+margin_bottom = 23.7447
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button21" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 369, 306 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button21"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -26.2553
+margin_right = 25.0
+margin_bottom = 23.7447
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button22" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 502, 306 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button22"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button23" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 635, 306 )
+scale = Vector2( 1.97193, 1.59326 )
+normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Button23"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonDone" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 388, 432 )
+scale = Vector2( 3.25, 1 )
+normal = ExtResource( 5 )
+pressed = ExtResource( 2 )
+shape = SubResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/ButtonDone"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -32.0
+margin_top = -32.0
+margin_right = 32.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 3 )
+text = "Done"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimeLabel" type="Label" parent="CanvasLayer"]
+anchor_left = 0.00292969
+anchor_top = 0.00666667
+anchor_right = 0.00292969
+anchor_bottom = 0.00666667
+margin_left = 905.0
+margin_top = -26.0
+margin_right = 1021.0
+margin_bottom = 85.0
+custom_fonts/font = SubResource( 4 )
+text = "01"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameTimer" type="Timer" parent="."]
+
+[node name="MistakeTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="GameOver" parent="." instance=ExtResource( 1 )]
+[connection signal="gameover" from="." to="GameOver" method="_on_Main_gameover"]
+[connection signal="pressed" from="CanvasLayer/Button00" to="." method="_on_Button00_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button01" to="." method="_on_Button01_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button02" to="." method="_on_Button02_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button03" to="." method="_on_Button03_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button10" to="." method="_on_Button10_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button11" to="." method="_on_Button11_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button12" to="." method="_on_Button12_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button13" to="." method="_on_Button13_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button20" to="." method="_on_Button20_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button21" to="." method="_on_Button21_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button22" to="." method="_on_Button22_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button23" to="." method="_on_Button23_pressed"]
+[connection signal="released" from="CanvasLayer/ButtonDone" to="." method="_on_ButtonStartDone_released"]
+[connection signal="timeout" from="GameTimer" to="." method="_on_Timer_timeout"]
